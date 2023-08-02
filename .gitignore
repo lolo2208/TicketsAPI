@@ -5,7 +5,7 @@ obj/
 # Archivos de respaldo y temporales
 [Tt]humbs.db
 *.log
-*.vscode
+*.vscode/
 *.vs/
 *.suo
 *.user
@@ -50,3 +50,8 @@ obj/
 *.sqlproj.user
 *.sqlproj.vspscc
 *.dbmdl
+
+# Archivos de configuración de Azure
+APITickets/.config/
+APITickets/Properties/PublishProfiles/
+APITickets/Properties/ServiceDependencies/
