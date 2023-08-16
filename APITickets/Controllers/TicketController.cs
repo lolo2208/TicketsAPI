@@ -107,7 +107,7 @@ namespace APITickets.Controllers
         {
             try
             {
-                var ticketObtained = dc.Ticket.Find(id);
+                var ticketObtained = dc.Ticket.Find(ticket.IdTicket);
 
 
                 if (ticketObtained == null)
@@ -118,6 +118,8 @@ namespace APITickets.Controllers
                 {
                     ticketObtained.ComentarioSolucion = ticket.ComentarioSolucion;
                     ticketObtained.IdEstado = 2;
+                    ticketObtained.IdUsuarioSol= id;
+                    ticketObtained.FecSolucion = DateTime.Now;
                     await dc.SaveChangesAsync();
 
                     return Ok("Ticket actualizado");
