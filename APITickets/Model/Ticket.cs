@@ -41,18 +41,18 @@ namespace APITickets.Model
         public int? IdUsuarioSol { get; set; }
 
         [ForeignKey("IdServicio")]
-        public Servicio Servicio { get; set; }
+        public Servicio? Servicio { get; set; }
 
         [ForeignKey("IdCategoria")]
-        public Categoria Categoria { get; set; }
+        public Categoria? Categoria { get; set; }
 
         [ForeignKey("IdEstado")]
-        public Estado Estado { get; set; }
+        public Estado? Estado { get; set; }
 
         [ForeignKey("IdUsuarioReg")]
-        public Usuario UsuarioRegistro { get; set; }
+        public Usuario? UsuarioRegistro { get; set; }
 
         [ForeignKey("IdUsuarioSol")]
-        public Usuario UsuarioSolucion { get; set; }
+        public Usuario? UsuarioSolucion { get; set; }
     }
 }
